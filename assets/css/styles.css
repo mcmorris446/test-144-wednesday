@@ -3,6 +3,9 @@ h1 {
     color: #000000;
     font-family: Lato;
     background-color: #ffffff;
+    font-size: 50pt;
+    text-align: center;
+    margin-top: 20pt;
   }
   
   h2 {
@@ -54,17 +57,17 @@ h1 {
   .header {
     padding: 5%;
     text-align: center;
-    background: #add8e6;
+    background: none;
     color: white;
   }
-  /* Style the header with a grey background and some padding */
+  /* Style header  */
 .header {
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 2% 0%;
   }
   
-  /* Style the header links */
+  /* Style header links */
   .header a {
     float:left;
     color: black;
@@ -76,44 +79,60 @@ h1 {
     border-radius: 5%;
     margin-top: 0%;
 
-  }
+}
   
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
-    height: auto ;
-    width: 20%;
-    
-  }
-  
-  /* Change the background color on mouse-over */
-  .header a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the active/current link*/
-  .header a.active {
-    background-color: dodgerblue;
+/* Style the logo link */
+.buttonlogo {
+  height: auto ;
+  width: 20%;
+  border: none;
+    outline: 0;
+    display: outside;
+    padding: 5px;
     color: white;
-  }
+    background-color: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+
   
   /* Float the link section to the right */
   .header-centre {
     align-items:center;
     overflow: hidden;
-    background-color: #f1f1f1;
-    padding: 2% 17%;
+    background-color: none;
+    padding: 1% 17%;
     text-align: center;
   }
 
+  .button {
+    border: none;
+    outline: 0;
+    padding: 5px 6px;
+    color: black;
+    background-color: none;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 17pt;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  .buttonlogo:hover {
+    background-color: #555;
+  }
+  
   /* Add a black background color to the top navigation bar */
 .searchbar {
     overflow:visible;
     background-color:none;
     padding: 1% 5%;
-    margin-top: none;
+    margin-top: 2%;
     margin-bottom: none;
-   float:inline-end;
+   float:right;
     
   }
   
@@ -126,6 +145,8 @@ h1 {
     padding: 2% 2%;
     text-decoration: none;
     font-size: 17pt;
+    width: 70%;
+    height: auto;
     
   }
   
@@ -133,12 +154,16 @@ h1 {
   .searchbar a:hover {
     background-color: #ddd;
     color: black;
+    width: 70%;
+    height: auto;
   }
   
   /* Style the "active" element to highlight the current page */
   .searchbar a.active {
     background-color: #2196F3;
     color: white;
+    width: 70%;
+    height: auto;
   }
   
   /* Style the search box inside the navigation bar */
@@ -149,37 +174,10 @@ h1 {
     margin-top: 1%;
     margin-right: 0%;
     font-size: 12pt;
+    width: 70%;
+    height: auto;
     
-    
   }
-  
-  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-  @media screen and (max-width: 600px) {
-    .searchbar a, .searchbar input[type=text] {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 3%;
-    }
-    .searchbar input[type=text] {
-      border: 2% solid #ccc;
-    }
-  }
-  
-  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .searchbar {
-      float: none;
-    }
-  }
-  
   
   
   /* background colour*/
@@ -200,20 +198,22 @@ h1 {
 
 
 
-/* below is for artists page*/
+/* below is for artists and events pages*/
 
 /* Three columns side by side */
 .column {
     float:left;
-    width: 33.33%;
+    width: 30%;
     height: auto;
-    margin-bottom: 15%;
-    margin-top: 15%;
+    margin-bottom: 1%;
+    margin-top: 8%;
+    margin-left: 2%;
+    margin-right: 0;
     padding: 0 8px;
   }
   
   /* Display the columns below each other instead of side by side on small screens */
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 600px) {
     .column {
       width: 100%;
       display: block;
@@ -237,11 +237,8 @@ h1 {
     display: table;
   }
   
-  .title {
-    color: grey;
-  }
   
-  .button {
+  .buttonart {
     border: none;
     outline: 0;
     display: inline-block;
@@ -253,6 +250,13 @@ h1 {
     width: 100%;
   }
   
-  .button:hover {
-    background-color: #555;
+  .buttonart:hover {
+    background-color: rgb(194, 189, 189);
+  }
+
+  .footer {
+      text-align: right;
+      padding: 3%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: italic;
   }
