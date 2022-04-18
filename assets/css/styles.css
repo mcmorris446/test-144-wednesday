@@ -1,6 +1,6 @@
 /* adjust headings*/
 h1 {
-    color: hsl(0, 0%, 0%);
+color: hsl(0, 0%, 0%);
     font-family: Lato;
     background-color: #ffffff;
     font-size: 50pt;
@@ -91,22 +91,22 @@ h1 {
 
   }
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-    width: 20%;
-    height: auto;
-  }
-  
-  /* Style the "active" element to highlight the current page */
-  .topnav a.active {
-    background-color: #6cb6f3;
-    color: white;
-    width: 20%;
-    height: auto;
-  }
-  
+ 
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        width: 20%;
+        height: auto;
+      
+    }
+      /* Style the "active" element to highlight the current page */
+      .topnav a.active {
+        background-color: #6cb6f3;
+        color: white;
+        width: 20%;
+        height: auto;
+      }
   /* Style the search box inside the navigation bar */
   .topnav input[type=text] {
     float: right;
@@ -132,47 +132,60 @@ h1 {
       margin-left: 30%; 
       margin-right: 33%;
     }
-
+      /* Change the color of links on hover */
+       .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        width: 33.33%;
+        height: auto;
+      
+    }
+      /* Style the "active" element to highlight the current page */
+      .topnav a.active {
+        background-color: #6cb6f3;
+        color: white;
+        width: 33.33%;
+        height: auto;
+      }
+  
   
 
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-    width: 33.33%;
-    height: auto;
-  }
-  
-  /* Style the "active" element to highlight the current page */
-  .topnav a.active {
-    background-color: #6cb6f3;
-    color: white;
-    width: 33.33%;
-    height: auto;
-  
-  }
-  }
-  
 
+
+  }
+  
 
   /* adjust characteristics of all 'buttons' */
   .button {
-    border: none;
-    outline: 0;
-    padding: 5px 6px;
+    padding: 1% 1%;
     color: black;
-    background-color: #ddd;
+    background-color: none;
     text-align: center;
     cursor: pointer;
-    width: 33.33%;
+    width: 10%;
     font-size: 17pt;
-    margin-left: 33.33%;
-    font-family:;
+    margin-left: 44%;
+    margin-top: 5px;
+
   }
+  @media screen and (max-width: 900px) {
+    .button {
+        padding: 1% 1%;
+        color: black;
+        background-color: none;
+        text-align: center;
+        cursor: pointer;
+        width: 33.33%;
+        font-size: 17pt;
+        margin-left: 33.33%;
+        margin-top: 5px;
+    }
+}
+
   
   /* to adjust certain buttons*/
  
-  button:hover {
+  .button:hover {
     background-color:  #6cb6f3;
   }
  
@@ -251,50 +264,65 @@ h1 {
 
 
 
-
-
-
 /* below is for artists and events pages*/
 
 /* vertical column ( Artists ) */
 .column {
     float:center;
-    width: 33.33%;
+    width: 40%;
     height: auto;
     margin-bottom: 1%;
     margin-top: 5%;
-    margin-left: 33.33%;
-    margin-right: 33.33%;
+    margin-left: 30%;
     padding: 0 8px;
   }
-   /* Responsive layout - makes a two column-layout instead of four columns  ( Our ) */
+
+   /* Responsive layout - makes a two column-layout instead of four columns  ( Artists) */
    @media screen and (max-width: 900px) {
     .column {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
+      width: 80%;
+      margin-left: 10%;
+      margin-bottom: 10%;
     }
+
+    /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      margin-left: 0%;
+      display: block;
+    }
+  }
 }
   
   /* to adjust only objects labled column2 ( our team vertical )*/
   .column2, .h2 {
     float: center;
-    width: 33.33%;
+    width: 40%;
     height: auto;
     margin-bottom: 1%;
     margin-top: 5%;
-    margin-left: 33.33%;
-    margin-right: 33.33%;
+    margin-left: 30%;
     padding: 0 8px;
   }
    
-     /* Responsive layout - makes a two column-layout instead of four columns  ( Our Team ) */
-     @media screen and (max-width: 900px) {
-        .column2 {
-          width: 100%;
-         margin-left:0 ;
-         margin-top: 15%;
+  /* Responsive layout - makes a two column-layout instead of four columns  ( Our Team ) */
+    @media screen and (max-width: 900px) {
+    .column2 {
+    width: 80%;
+    margin-left:10% ;
+    margin-top: 15%;
         }
+
+         /* Responsive layout - makes a two column-layout instead of four columns  ( Our Team ) */
+    @media screen and (max-width: 600px) {
+        .column2 {
+        width: 100%;
+        margin-left:0 ;
+        margin-top: 15%;
+            }
+        }
+
     }
     
   /* to adjust only objects labled column3 horizontal ( Events )*/
@@ -337,14 +365,6 @@ h1 {
       }
   
   
-  
-  /* Display the columns below each other instead of side by side on small screens */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 33.33%;
-      display: block;
-    }
-  }
   
   /* shadows to create a card effect on columns */
   .card {
@@ -421,8 +441,35 @@ input[type=text], select, textarea {
   }
 
   .footer {
-      text-align: right;
+      text-align: center;
       padding: 3%;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-style: italic;
+      outline: #000000;
+      background-color:rgb(236, 222, 222) ;
   }
+       .ftext{
+        text-align: center;
+        margin-left: 33.33%;
+        margin-right: 33.33%;
+       }
+    
+
+        @media screen and (max-width: 900px) {
+            .ftext {
+              margin-left:10%;
+              margin-right: 10%;
+              margin-bottom: 10;
+              text-align: center;
+            }  
+        }
+      
+        @media screen and (max-width:600px) {
+            .ftext {
+                margin-left:20%;
+                margin-right: 20%;
+                margin-bottom: 10%;
+                text-align: center;
+        }    
+    }
+    
