@@ -17,8 +17,7 @@ h1 {
     color: #000000;
     font-family: Lato;
     background-color: #ddd;
-    padding: none;
-    width: 600px;
+    padding: 5px;
     margin: 0 auto;
     font-size: 17px;
     text-align: center;
@@ -122,17 +121,20 @@ h1 {
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
   @media screen and (max-width: 600px) {
-    .topnav a, .topnav input[type=text] {
-      float:inline-start;
+    .topnav a,.topnav input[type=text]  {
+      float:center;
       display: block;
-      text-align: left;
+      text-align: center;
       width: 33.33%;
       margin-top: 15px;
       padding: 15px;
       height: auto;
-      margin-left: 34%;
+      margin-left: 30%; 
+      margin-right: 33%;
     }
+
   
+
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #ddd;
@@ -147,9 +149,11 @@ h1 {
     color: white;
     width: 33.33%;
     height: auto;
-  }
   
   }
+  }
+  
+
 
   /* adjust characteristics of all 'buttons' */
   .button {
@@ -163,6 +167,7 @@ h1 {
     width: 33.33%;
     font-size: 17pt;
     margin-left: 33.33%;
+    font-family:;
   }
   
   /* to adjust certain buttons*/
@@ -251,34 +256,92 @@ h1 {
 
 /* below is for artists and events pages*/
 
-/* Three columns side by side */
+/* vertical column ( Artists ) */
 .column {
-    float:left;
-    width: 30%;
-    height: auto;
-    margin-bottom: 1%;
-    margin-top: 10%;
-    margin-left: 2%;
-    margin-right: 0;
-    padding: 0 8px;
-  }
-  
-  /* to adjust only objects labled column2*/
-  .column2 {
-    float:left;
-    width: 100%;
+    float:center;
+    width: 33.33%;
     height: auto;
     margin-bottom: 1%;
     margin-top: 5%;
     margin-left: 33.33%;
-    margin-right: 0;
+    margin-right: 33.33%;
     padding: 0 8px;
   }
+   /* Responsive layout - makes a two column-layout instead of four columns  ( Our ) */
+   @media screen and (max-width: 900px) {
+    .column {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+}
+  
+  /* to adjust only objects labled column2 ( our team vertical )*/
+  .column2, .h2 {
+    float: center;
+    width: 33.33%;
+    height: auto;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    margin-left: 33.33%;
+    margin-right: 33.33%;
+    padding: 0 8px;
+  }
+   
+     /* Responsive layout - makes a two column-layout instead of four columns  ( Our Team ) */
+     @media screen and (max-width: 900px) {
+        .column2 {
+          width: 100%;
+         margin-left:0 ;
+         margin-top: 15%;
+        }
+    }
+    
+  /* to adjust only objects labled column3 horizontal ( Events )*/
+  .column3 {
+    float: left;
+    width: 20%;
+    height: auto;
+    margin-top: 8%;
+    margin-right: 0%;
+    margin-left: 3.8%;
+    padding: 5px 5px;
+
+        
+      }
+        
+      /* Clear floats after rows */ 
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+      
+      /* Responsive layout - makes a two column-layout instead of four columns  ( events ) */
+      @media screen and (max-width: 900px) {
+        .column3 {
+          width: 30%;
+          margin-left:10%;
+          margin-bottom: 10px;
+          
+        }
+      }
+      
+      /* makes 1 column */
+      @media screen and (max-width: 600px) {
+        .column3 {
+   width:100%;
+   margin-left:0%;
+        }
+      }
+  
+  
   
   /* Display the columns below each other instead of side by side on small screens */
   @media screen and (max-width: 600px) {
     .column {
-      width: 100%;
+      width: 33.33%;
       display: block;
     }
   }
@@ -356,6 +419,7 @@ input[type=text], select, textarea {
     background-color: #f2f2f2;
     padding: 20px;
   }
+
   .footer {
       text-align: right;
       padding: 3%;
