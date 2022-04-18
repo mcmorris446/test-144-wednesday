@@ -19,14 +19,18 @@ color: hsl(0, 0%, 0%);
     background-color: #ddd;
     padding: 5px;
     margin: 0 auto;
-    font-size: 17px;
+    font-size: 18px;
     text-align: center;
   }
   
   h4 {
     color: #000000;
-    font-family: lato;
-    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15pt;
+    background-color: none;
+    width: 33.33%;
+    margin-left: 33.33%;
+    text-align: center;
   }
   p {
     color: #000000;
@@ -39,6 +43,11 @@ color: hsl(0, 0%, 0%);
   main {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
   }
   
   
@@ -73,7 +82,7 @@ color: hsl(0, 0%, 0%);
     background-color: #e9e9e9;
     width: 100%;
     height: auto;
-
+ 
   }
   
   /* Style the links inside the navigation bar */
@@ -85,9 +94,8 @@ color: hsl(0, 0%, 0%);
     padding: 5px 0;
     text-decoration: none;
     font-size: 17pt;
-    width: 20%;
+    width: 15%;
     height: auto;
-    margin-top: 10px;
 
   }
   
@@ -96,7 +104,7 @@ color: hsl(0, 0%, 0%);
     .topnav a:hover {
         background-color: #ddd;
         color: black;
-        width: 20%;
+        width: 15%;
         height: auto;
       
     }
@@ -104,19 +112,21 @@ color: hsl(0, 0%, 0%);
       .topnav a.active {
         background-color: #6cb6f3;
         color: white;
-        width: 20%;
+        width: 15%;
         height: auto;
       }
   /* Style the search box inside the navigation bar */
   .topnav input[type=text] {
     float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 15px;
-    margin-right: 10px;
-    font-size: 17px;
-    width: 12%;
-    padding: 5px 0;
+    display: block;
+      text-align: center;
+      width: 15%;
+      margin-top: 0%;
+      margin-bottom: 0%;
+      padding: 10px;
+      height: auto;
+      margin-left: 5%; 
+      margin-right: 3%;
   }
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
@@ -147,13 +157,9 @@ color: hsl(0, 0%, 0%);
         width: 33.33%;
         height: auto;
       }
-  
-  
-
-
-
   }
   
+
 
   /* adjust characteristics of all 'buttons' */
   .button {
@@ -189,59 +195,6 @@ color: hsl(0, 0%, 0%);
     background-color:  #6cb6f3;
   }
  
-  
-  /* Add a black background color to search bar */
-.searchbar {
-    overflow:visible;
-    background-color:none;
-    margin-top: 1%;
-    margin-bottom: none;
-   float:left;
-
-  }
-  
-  /* Style the links inside the search bar */
-  .searchbar a {
-    float: right;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 2% 2%;
-    text-decoration: none;
-    font-size: 17pt;
-    width: 25%;
-    height: auto;
-    
-  }
-  
-  /* Change the color of links on hover */
-  .searchbar a:hover {
-    background-color: #ddd;
-    color: black;
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Style the "active" element to highlight when in use or on page */
-  .searchbar a.active {
-    background-color: #2196F3;
-    color: white;
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Style the search box inside the navigation bar */
-  .searchbar input[type=text] {
-    float: right;
-    padding: 4% 2%;
-    border: none;
-    margin-top: 1%;
-    margin-right: 0%;
-    font-size: 12pt;
-    width: 100%;
-    height: auto;
-    
-  }
   
   
   /* background colour*/
@@ -338,27 +291,27 @@ color: hsl(0, 0%, 0%);
         
       }
         
-      /* Clear floats after rows */ 
+  /* Clear floats after rows */ 
       .row:after {
-        content: "";
-        display: table;
-        clear: both;
+    content: "";
+    display: table;
+    clear: both;
       }
     
       
-      /* Responsive layout - makes a two column-layout instead of four columns  ( events ) */
-      @media screen and (max-width: 900px) {
-        .column3 {
-          width: 30%;
-          margin-left:10%;
-          margin-bottom: 10px;
+   /* Responsive layout - makes a two column-layout instead of four columns  ( events ) */
+    @media screen and (max-width: 900px) {
+    .column3 {
+    width: 30%;
+    margin-left:10%;
+    margin-bottom: 10px;
           
         }
       }
       
-      /* makes 1 column */
-      @media screen and (max-width: 600px) {
-        .column3 {
+  /* makes 1 column */
+  @media screen and (max-width: 600px) {
+  .column3 {
    width:100%;
    margin-left:0%;
         }
@@ -409,15 +362,49 @@ color: hsl(0, 0%, 0%);
 /* Style inputs with which are allocated; type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* area taken up by contact section ( size ) */
+    float: center;
+    margin-left: 30%;
+    margin-right: 10%;
+    height: auto;
     padding: 12px; 
     border: 1px solid #ccc; 
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* stops padding from moving */
-    margin-top: 6px; 
+    margin-top: 8px; 
     margin-bottom: 16px; 
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
-  
+
+  #fname{
+      width: 15%;
+      float: center;
+  }
+  #lname{
+      width: 15%;
+      float: center;
+  }
+
+  #country{
+      width: 10%;
+      float: center;
+  }
+
+  #subject{
+      width: 33.33%;
+      float:center;
+  }
+      
+/* adjust contacts on smaller screens */
+@media screen and (max-width: 800px) {
+input[type=text], select, textarea, #fname, #lname, #country, #subject{ 
+width:100%;
+float:left;
+margin-left: 0%;
+
+  }
+}
+
+
   /* Style the submit button  */
   input[type=submit] {
     background-color: #04AA6D;
@@ -438,38 +425,40 @@ input[type=text], select, textarea {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    margin-top: 5%;
   }
 
+  /* footer adjustments */
   .footer {
-      text-align: center;
-      padding: 3%;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-style: italic;
-      outline: #000000;
-      background-color:rgb(236, 222, 222) ;
+    text-align: center;
+    padding: 3%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    outline: #000000;
+    background-color:rgb(236, 222, 222) ;
   }
-       .ftext{
-        text-align: center;
-        margin-left: 33.33%;
-        margin-right: 33.33%;
-       }
+   .ftext{
+    text-align: center;
+    margin-left: 33.33%;
+    margin-right: 33.33%;
+     }
     
 
-        @media screen and (max-width: 900px) {
-            .ftext {
-              margin-left:10%;
-              margin-right: 10%;
-              margin-bottom: 10;
-              text-align: center;
-            }  
-        }
+  @media screen and (max-width: 900px) {
+   .ftext {
+    margin-left:10%;
+    margin-right: 10%;
+    margin-bottom: 10;
+    text-align: center;
+     }  
+    }
       
-        @media screen and (max-width:600px) {
-            .ftext {
-                margin-left:20%;
-                margin-right: 20%;
-                margin-bottom: 10%;
-                text-align: center;
+   @media screen and (max-width:600px) {
+   .ftext {
+    margin-left:20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    text-align: center;
         }    
     }
     
